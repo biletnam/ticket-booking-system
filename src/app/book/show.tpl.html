@@ -1,0 +1,18 @@
+<h3>Select Show and Seats</h3>
+
+Movie : <span ng-bind="movie"></span>
+<br/>
+Date : <span ng-bind="date"></span>
+
+<br/><br/>
+<select ng-model="show.my_show" ng-options="show.time for show in shows">
+  <option value="">Select Show</option>
+</select> 
+<br/><br/>
+<select ng-model="show.total_seats" ng-options="seat.seat for seat in seats">
+  <option value="">Select Seats</option>
+</select> 
+<br/><br/>
+<button ng-click="select_show_seat()">Next</button>
+<br/><br/>
+<span ng-bind="error"></span>

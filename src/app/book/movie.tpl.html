@@ -1,0 +1,12 @@
+<h3>Select Movie and Date</h3>
+<select ng-model="movie.my_movie" ng-options="movie.name for movie in movies">
+  <option value="">Select Movie</option>
+</select> 
+<br/><br/>
+<select ng-model="movie.movie_date" ng-options="date.date for date in dates">
+  <option value="">Select Date</option>
+</select> 
+<br/><br/>
+<button ng-click="select_movie_date()">Next</button>
+<br/><br/>
+<span ng-bind="error"></span>

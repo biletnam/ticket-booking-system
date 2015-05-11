@@ -1,0 +1,19 @@
+<!-- <h3>User List</h3>
+<table border="1">
+	<tr>
+		<td>Name</td>
+		<td>Username</td>
+	</tr>
+	<tr ng-repeat="user in users">
+		<td ng-bind="user.name"></td>
+		<td ng-bind="user.username"></td>
+	</tr>
+</table> -->
+
+<h3>Login</h3>
+<span>Username : </span><br/>
+<input type="text" ng-model="User.username"><br/>
+<span>Password : </span><br/>
+<input type="password" ng-model="User.password"><br/><br/>
+<button ng-click="login()">Login</button><br/><br/>
+<a ui-sref="register">Register now</a>
